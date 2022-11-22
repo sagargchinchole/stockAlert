@@ -1,4 +1,5 @@
-﻿################################################################################################
+param ($productList)
+################################################################################################
 function sendAlert($prodTitle,$pincode,$prodUrl){
     $bot_id="1160665260:AAES1e4F8aYAfGLdBfDl4cRcr-4z0UKoBuk"
     $chat_id="fkStockAlertTest"
@@ -10,7 +11,7 @@ function sendAlert($prodTitle,$pincode,$prodUrl){
 $baseUrl="https://www.samsung.com/in/api/v4"
 $pincode="422003"
 
-$productList='sm-e225fzkd,sm-e225flbd'.ToUpper() #'SM-M336BZBP,SM-M336BZNP,sm-m325flbc'.ToUpper()
+$productList=$productList.ToUpper() #'SM-M336BZBP,SM-M336BZNP,sm-m325flbc'.ToUpper()
 
 
 ###########################################################
