@@ -1,4 +1,4 @@
-﻿param ($productCodes=@())
+﻿param ($productCodes=@(),$pincode)
 ##############################################################################################################
 function sendAlert($productTitle, $productUrl,$pincode){
     $bot_id="1160665260:AAES1e4F8aYAfGLdBfDl4cRcr-4z0UKoBuk"
@@ -9,7 +9,8 @@ function sendAlert($productTitle, $productUrl,$pincode){
 ######################################################################################################################################################
 
 #$productCodes=@("492850038", "492850035") #, "493177765")
-$pincode="462030"
+$$productCodes=$productCodes.Split(",")
+#$pincode="462030"
 $url="https://www.reliancedigital.in/rildigitalws/v2/rrldigital/productavailability/serviceabilitylist"
 
 ###################################################################################################
