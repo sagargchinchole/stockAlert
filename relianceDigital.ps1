@@ -9,7 +9,7 @@ function sendAlert($productTitle, $productUrl,$pincode){
 ######################################################################################################################################################
 
 #$productCodes=@("492850038", "492850035") #, "493177765")
-$$productCodes=$productCodes.Split(",")
+$productCodes=$productCodes.Split(",")
 #$pincode="462030"
 $url="https://www.reliancedigital.in/rildigitalws/v2/rrldigital/productavailability/serviceabilitylist"
 
