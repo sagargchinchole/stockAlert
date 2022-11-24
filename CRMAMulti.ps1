@@ -18,10 +18,6 @@ foreach($item in $itemIds)
     {
         $pincode="422003"
     }
-    else
-    {
-        $pincode="800016"
-    }
     $currItem=@{
                 "fulfillmentType"= "HDEL"
                 "itemID"= $item
