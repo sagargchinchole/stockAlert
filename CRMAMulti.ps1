@@ -55,7 +55,6 @@ while($true)
 {
 Start-Sleep -Seconds 2
 $response=Invoke-RestMethod -Uri $url -Method Post -Body $payload -Headers $headers 
-$response | ConvertTo-Json -Depth 15   
 $promiseLine=$response.promise.suggestedOption.option.promiseLines.promiseLine
 foreach($itemLine in $promiseLine) {
     $currItemId = $itemLine.itemID
